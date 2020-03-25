@@ -20,7 +20,7 @@ e.g.
 [1,2,3].concat([1,2])
 => [1, 2, 3, 1, 2]
 ```
-# Rails
+
 
 
 # general
@@ -34,3 +34,7 @@ e.g.
 https://www.xmisao.com/2013/12/13/ruby-reflection-method-summary.html
 wikipedia
 https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29
+
+# exception
+- rescueで型を指定しない場合は、StandardErrorをrescueする
+- StandardErrorをrescueした場合、StandardErrorとそのサブクラスがrescueされる
