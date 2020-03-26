@@ -45,3 +45,15 @@ https://github.com/willnet/rspec-style-guide#%E5%BF%85%E8%A6%81%E3%81%AA%E3%81%8
 - リクエストスペックは、リクエストの文脈によって分けるのが良さそう
 
 paramsとかでcotnextを切る
+
+- is_expectedはexpect(subject)と一緒
+
+
+
+
+
+
+
+
+
+
