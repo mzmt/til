@@ -21,6 +21,8 @@ e.g.
 inner join users on users.attatchable_type = 'Post' and users.attatchable_id = posts.id
 ```
 
+- updateする際、子レコードは親レコードが存在するかを確認するSQLを発行している(親が複数いる場合は全て)
+
 ## Rspec
 
 - パフォーマンスの観点から、レコードを作らなくてすむ場合は作らないようにしたい。
