@@ -23,6 +23,13 @@ inner join users on users.attatchable_type = 'Post' and users.attatchable_id = p
 
 - updateする際、子レコードは親レコードが存在するかを確認するSQLを発行している(親が複数いる場合は全て)
 
+- increment, or decrimentメソッド
+
+特定のレコードの値を増やしたり減らしたりできる. !をつけるとsaveはいらなくなる
+```ruby
+User.first.increment!(:point, 2000)
+```
+
 ## Rspec
 
 - パフォーマンスの観点から、レコードを作らなくてすむ場合は作らないようにしたい。
