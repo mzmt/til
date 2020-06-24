@@ -17,3 +17,9 @@ e.g    <kbd>ESC</kbd>
 <sup>タグで文字を小文字にできる。画像の下に説明を追記したり、表が横にはみ出ないようにするのに使える
 
 git shortlog -sn でコミット数ランキングが見れる
+
+brew install hub ->
+hub browseコマンドでリモートレポジトリのgithubページ開ける
+alias貼るなら
+<.bashrc>
+alias hub='hub browse'
