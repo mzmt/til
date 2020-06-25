@@ -30,6 +30,18 @@ inner join users on users.attatchable_type = 'Post' and users.attatchable_id = p
 User.first.increment!(:point, 2000)
 ```
 
+pick  
+```ruby
+User.where("age > 20").limit(1).pluck(:id)).first
+User.where("age > 20").pick(:id)
+
+// 実装
+def pick(*column_names)
+  limit(1).pluck(*column_names).first
+end
+```
+https://github.com/rails/rails/pull/31941
+
 ## Rspec
 
 - パフォーマンスの観点から、レコードを作らなくてすむ場合は作らないようにしたい。
