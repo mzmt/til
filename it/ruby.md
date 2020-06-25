@@ -21,6 +21,13 @@ e.g.
 => [1, 2, 3, 1, 2]
 ```
 
+delegate
+
+https://docs.ruby-lang.org/ja/latest/method/Forwardable/i/delegate.html
+
+メソッドの委譲先を指定できる。これもわかりやすい
+
+https://magazine.rubyist.net/articles/0012/0012-BundledLibraries.html
 
 
 # general
@@ -38,3 +45,6 @@ https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29
 # exception
 - rescueで型を指定しない場合は、StandardErrorをrescueする
 - StandardErrorをrescueした場合、StandardErrorとそのサブクラスがrescueされる
+
+
+
