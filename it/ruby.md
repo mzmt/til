@@ -21,6 +21,16 @@ e.g.
 => [1, 2, 3, 1, 2]
 ```
 
+block_given?
+- メソッドにブロックが渡されているかどうかを返す
+```ruby
+def method
+  yield if block_given?
+end
+
+method(args) { another_method }
+```
+
 delegate
 
 https://docs.ruby-lang.org/ja/latest/method/Forwardable/i/delegate.html
