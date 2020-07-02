@@ -39,6 +39,11 @@ https://docs.ruby-lang.org/ja/latest/method/Forwardable/i/delegate.html
 
 https://magazine.rubyist.net/articles/0012/0012-BundledLibraries.html
 
+`<`   はクラス継承しているかのチェックにも使える
+```ruby
+if 1.class < Numeric  # true
+```
+
 
 # general
 - クエリ件数が多い時は、１件ずつupdateせずに、UPDATE文を100件ずつまとめて発行数を削減する
