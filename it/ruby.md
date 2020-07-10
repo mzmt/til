@@ -44,6 +44,11 @@ https://magazine.rubyist.net/articles/0012/0012-BundledLibraries.html
 if 1.class < Numeric  # true
 ```
 
+public_send
+
+publicなメンバにしかアクセスできないsendメソッド
+
+https://docs.ruby-lang.org/ja/latest/method/Object/i/public_send.html
 
 # general
 - クエリ件数が多い時は、１件ずつupdateせずに、UPDATE文を100件ずつまとめて発行数を削減する
