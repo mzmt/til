@@ -70,11 +70,10 @@ paramsとかでcotnextを切る
 - is_expectedはexpect(subject)と一緒
 
 
-
-
-
-
-
+capybaraで、デバッグ時にレンダリングされるhtmlを整形して表示する方法
+```
+puts CGI.pretty(page.body)
+```
 
 
 
