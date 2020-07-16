@@ -57,6 +57,14 @@ RSpec.describe User, type: :model do
 end
 ```
 
+JSを使わないと実行できない操作は以下のようにする
+```
+it 'hoge', js: true do
+~ ~ ~
+end
+```
+https://qiita.com/jnchito/items/607f956263c38a5fec24#javascript%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84%E3%81%A8%E6%93%8D%E4%BD%9C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E5%87%A6%E7%90%86%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B
+
 User#fullnameはレコードが保存されているか否かに影響しないメソッドである。
 この場合はcreateではなくbuild(もしくはbuild_stubbed)を使う。
 
