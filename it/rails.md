@@ -42,6 +42,12 @@ end
 ```
 https://github.com/rails/rails/pull/31941
 
+saveでレコードが保存できないとき
+```ruby
+post.save  // failed
+post.errors.full_messages  // check error
+```
+
 ## Rspec
 
 - パフォーマンスの観点から、レコードを作らなくてすむ場合は作らないようにしたい。
