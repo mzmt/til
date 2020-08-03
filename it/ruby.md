@@ -50,6 +50,22 @@ publicなメンバにしかアクセスできないsendメソッド
 
 https://docs.ruby-lang.org/ja/latest/method/Object/i/public_send.html
 
+===
+
+```ruby
+if (1..10) === 5 then         # Range
+  puts "OK"
+end
+
+if /[a-z]/ === "a" then       # Regexp
+  puts "OK"
+end
+
+if String === "a" then        # Module
+  puts "OK"
+end
+```
+
 # general
 - クエリ件数が多い時は、１件ずつupdateせずに、UPDATE文を100件ずつまとめて発行数を削減する
 
