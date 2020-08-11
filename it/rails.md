@@ -1,5 +1,28 @@
 # Rails
 
+## method
+
+`try`
+オブジェクトがnilでない場合のみ、そのオブジェクトのメソッドを実行する
+
+```ruby
+user ? user.age : "年齢なし" #userがいるか確認している
+user.try(:age) || "年齢なし" #userがいるか確認していない
+```
+
+```
+名前: <%= @user.name unless @user.nil? %>
+```
+
+```
+名前: <%= @user.try(:name) %>
+```
+これを
+```
+User.try(:find, 1)
+```
+こう書ける。引数も渡せる
+
 ## ActiveRecord
 
 - 評価タイミング
