@@ -31,3 +31,9 @@ alias貼るなら
 alias hub='hub browse'
 ```
 
+## fish
+
+`ctrl + w`  単語ごとに削除する
+
+`ctrl + f`  過去の履歴の補完ができる
+
