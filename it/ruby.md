@@ -65,6 +65,9 @@ if String === "a" then        # Module
   puts "OK"
 end
 ```
+ 
+SecureRandom.alphanumeric(5)
+文字列だけでランダムな値を生成できる
 
 # general
 - クエリ件数が多い時は、１件ずつupdateせずに、UPDATE文を100件ずつまとめて発行数を削減する
