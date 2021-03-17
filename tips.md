@@ -37,3 +37,6 @@ alias hub='hub browse'
 
 `ctrl + f`  過去の履歴の補完ができる
 
+## html
+apple-touch-icon.pngを読み込むと、ホーム画面に追加した際のアイコンを変更できる(for iPhone)
+
