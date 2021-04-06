@@ -85,5 +85,47 @@ https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29
 - rescueで型を指定しない場合は、StandardErrorをrescueする
 - StandardErrorをrescueした場合、StandardErrorとそのサブクラスがrescueされる
 
+# inheritance
+- メソッドを呼び出す順番
+
+`hoge.ancestors`で呼び出す。継承リストの上から呼び出す。見つからない場合は、`method_missing`を探し出す
+`ancestors`は`class`, `superclass`と違いmoduleを表示する
+
+- `Module#prepend`
+
+`include`と同じくmoduleをmixinするメソッド。includeと違い、mixinされた先のクラス内のメソッドより先に呼ばれる。
+ancestorsで見るとmixin先より継承リストの上にあることがわかる。
+
+- 特異クラス(singleton_class)
+
+各オブジェクトが必ず1つ持っているクラス。
+
+- 特異メソッド
+
+インスタンスに対して定義されているメソッド。そのインスタンスのクラスよりも継承リストの上位にあるので、先に呼ばれる。
+
+- `extend`
+
+include, prependと同じくmixinのメソッドだが、特異クラスにmixinする。
+```ruby
+module Mod
+    def homu
+        "Mod#homu"
+    end
+end
+
+class X
+end
+
+x = X.new
+
+# Mod のメソッドが x オブジェクトに定義される
+x.extend Mod
+
+p x.homu
+# => "Mod#homu"
+
+```
+
 
 
