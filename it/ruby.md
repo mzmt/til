@@ -69,6 +69,21 @@ end
 SecureRandom.alphanumeric(5)
 文字列だけでランダムな値を生成できる
 
+- refine, using
+
+スコープ内でのみクラスやモジュールを拡張することができる
+```ruby
+module M
+  refine C do
+    def foo
+      puts "C#foo in M"
+    end
+  end
+end
+
+using M
+```
+
 # general
 - クエリ件数が多い時は、１件ずつupdateせずに、UPDATE文を100件ずつまとめて発行数を削減する
 
