@@ -96,6 +96,14 @@ https://www.xmisao.com/2013/12/13/ruby-reflection-method-summary.html
 wikipedia
 https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29
 
+
+### pry-rails
+- reload!で再度リロードしなくて済む。
+- `show-model user`でusersテーブルのスキーマを見れる
+- `show-method User.has_many`や、`$ User.all`とかでメソッドの定義を見れる
+- binding.irbはgem新しく入れずにで使えて、機能も追いついてきている。
+
+
 # exception
 - rescueで型を指定しない場合は、StandardErrorをrescueする
 - StandardErrorをrescueした場合、StandardErrorとそのサブクラスがrescueされる
