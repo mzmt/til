@@ -1,5 +1,8 @@
 # Rails
 
+## tips
+validationの行を項目ごとに分けると、エラーが出た時にどのエラーか分かりやすい
+
 ## method
 
 `try`
