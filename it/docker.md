@@ -19,7 +19,9 @@ gemfileとかソースコードをイメージに追加するときは、COPYを
 
 # 全削除
 コンテナ全削除（終了しているもののみ）
+
 ```docker rm (docker ps -a -f status=exited -q)```
 
 イメージ全削除(イメージを使っているコンテナがある時もあるので、コンテナを先に消す)
+
 ```docker rmi -f (docker images -a -q)```
