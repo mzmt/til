@@ -7,6 +7,8 @@ e.g    <kbd>ESC</kbd>
 
 
 バッククオートで色コードを囲むと色を表示してくれる `#C6E48B`
+![スクリーンショット 2021-10-21 18 33 01](https://user-images.githubusercontent.com/13535662/138251309-da73126f-4b1d-4cc7-bb5d-fe59d2575f99.png)
+
 
 diffで囲み、行頭に-や+をつけると緑と赤のハイライトで差分表示ができる
 ```diff
