@@ -3,6 +3,15 @@
 ## tips
 validationの行を項目ごとに分けると、エラーが出た時にどのエラーか分かりやすい
 
+`validates :num, presence: true, numericality: { greater_than: 0 }`
+みたいに書くと、開発時のエラー画面で`presence`と`numericality`のどっちに引っかかってるか分からないが、
+
+```ruby
+validates :num, presence: true,
+                numericality: { greater_than: 0 }
+```
+のように書くと該当箇所がハイライトされる
+
 ## method
 
 `try`
