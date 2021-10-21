@@ -34,6 +34,8 @@ alias貼るなら
 alias hub='hub browse'
 ```
 
+`.`でブラウザ上でVSCodeを開ける
+
 ## fish
 
 `ctrl + w`  単語ごとに削除する
