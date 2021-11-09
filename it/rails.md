@@ -124,6 +124,9 @@ capybaraで、デバッグ時にレンダリングされるhtmlを整形して�
 puts CGI.pretty(page.body)
 ```
 
+`has_many :articles, -> { distinct }, through: :readings`
+これでuserからarticlesを取得する際、articleのtitleやcontentが重複するもの以外を抜き出す（全てのパターンを抜き出す）
+
 ## other gems
 count(*)しなければページネーションできないので、レコード数が多いとkaminariが遅くなる問題
 `without_count`オプションで解決する
